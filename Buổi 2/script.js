@@ -258,6 +258,7 @@ console.log(cleanObject({ a: 1, b: null, c: undefined, d: 4 })); // { a: 1, d: 4
 //     vegetable: 20
 // }
 
+
 // Bài 17. Viết hàm uniqueValues(arr1, arr2) trả về mảng các giá trị duy nhất từ hai mảng.
 // Input: arr1 = [1, 2, 3], arr2 = [3, 4, 5]
 // Output: [1, 2, 3, 4, 5]
@@ -267,13 +268,12 @@ console.log(cleanObject({ a: 1, b: null, c: undefined, d: 4 })); // { a: 1, d: 4
 // Input: arr1 = [1, 2, 3], arr2 = [3, 2, 1]
 // Output: true
 
-// Bài 19. Viết hàm findLongestString(arr) trả về chuỗi có độ dài lớn nhất trong mảng.
 
+// Bài 19. Viết hàm findLongestString(arr) trả về chuỗi có độ dài lớn nhất trong mảng.
 // Input: arr = ['abc', 'abcd', 'a']
 // Output: 'abcd'
 
 // Bài 20. Viết hàm intersection(arr1, arr2) trả về mảng chứa các giá trị chung giữa hai mảng.
-
 // Input: arr1 = [1, 2, 3], arr2 = [2, 3, 4]
 // Output: [2, 3]
 
