@@ -1,0 +1,98 @@
+﻿.lesson-page {
+  min-height: 100vh;
+  padding: 48px;
+  color: #172033;
+  background: #f6f8fb;
+}
+
+.hero-panel,
+.practice-panel {
+  max-width: 980px;
+  padding: 28px;
+  border: 1px solid #dbe3ef;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 16px 40px rgba(23, 32, 51, 0.08);
+}
+
+.hero-panel h1,
+.practice-panel h2 {
+  margin: 8px 0 12px;
+}
+
+.eyebrow {
+  margin: 0;
+  color: #2563eb;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.grid-panel {
+  display: grid;
+  max-width: 980px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.value-card {
+  padding: 20px;
+  border: 1px solid #dbe3ef;
+  border-radius: 14px;
+  background: #ffffff;
+}
+
+.value-card span,
+.value-card small {
+  color: #64748b;
+}
+
+.value-card strong {
+  display: block;
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.practice-panel {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 20px;
+}
+
+.score-control {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+  font-weight: 700;
+}
+
+.score-control input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font: inherit;
+}
+
+.result-box {
+  grid-column: 1 / -1;
+  padding: 18px;
+  border-radius: 12px;
+  background: #eef6ff;
+}
+
+.result-box p {
+  margin: 8px 0;
+}
+
+@media (max-width: 760px) {
+  .lesson-page {
+    padding: 24px;
+  }
+
+  .grid-panel,
+  .practice-panel {
+    grid-template-columns: 1fr;
+  }
+}
