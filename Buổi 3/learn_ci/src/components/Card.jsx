@@ -1,15 +1,31 @@
-import React from "react";
-import Edit from "../assets/icon/Edit";
-function Card(props) {
-  return (
-    <div className="card">
-      <p>Tôi tên: {props.name}</p>
-      <p>Học lớp: {props.class_name}</p>
-      <p>{props.description}</p>
-      <Edit width={24} height={24} status={props.status} />
-    </div>
-  );
+import Edit from "../assets/icon/Edit"
+
+function formatDate(date) {
+  return date.toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+  })
 }
 
-export default Card;
-  
+function Card({ task, user, flag }) {
+  return (
+    <article className="task-card">
+      <div className="task-card-header">
+        <h3>{task.title}</h3>
+        <Edit width={16} height={16} status={task.statusId} />
+      </div>
+
+      <p>{task.description}</p>
+
+      <span className="assignee">{user?.name}</span>
+
+      <footer className="task-meta">
+        <span>📎 {task.taskId % 3}</span>
+        <span className="flag" style={{ color: flag?.color }}>⚑</span>
+        <span>◷ {formatDate(task.deadline)}</span>
+      </footer>
+    </article>
+  )
+}
+
+export default Card
